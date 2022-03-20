@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Jobberman</title>
+  </head>
+
+<body>
+  <!--start header part-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!--paste code here-->
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+  
+</div>
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+ <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning" type="submit">Search</button>
+    </form>
+  </div>
+  <br>
+  <a href="job2.html" style="color: #fec007">FIND A JOB</a>
+  <a href="#">JOB SEEKERS</a>
+  <a href="#">EMPLOYERS</a>
+  <a href="#" style="color: #fec007">SOFT SKILLS TRAINING</a>
+   <a href="#">RESOURCE CENTRE</a>
+    <a href="#">YOUTH ENGAGEMENT</a>
+     <a href="#">PROFESSIONAL CV SERVICES</a>
+      <a href="#" style="color: #fec007">SKILLS ASSESSMENTS</a>
+       <a href="#">CONTACT US</a>
+        <a href="#">
+          <svg class="bi me-2" width="16" height="30"><use xlink:href="#people-circle"></use></svg>
+          <button type="button" class="btn btn-warning" style="width: 50%; color: white; font-weight: bold;">LOG IN</button>
+        </a>
+</div>
+
+
+
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <!--SPACE BETWEEN UPPER NAVBAR-->
+      
+      </ul>
+      <form class="d-flex">
+        <a class="nav-link" href="log-in.html"><button type="button" class="btn btn-warning btn-1">LOG IN</button></a>
+        <a class="nav-link" href="#"><button type="button" class="btn btn-warning btn-1">SIGN UP</button></a>
+         <a class="nav-link" href="#"><button type="button" class="btn btn-outline-warning btn-1">POST A JOB</button></a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<style>
+
+
+.sidebar {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 111111111111111;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: left;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fec007;
+  padding: 10px 15px;
+  border: none;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/ On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) /
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<!-- start of html -->
+
+
+
+  
+  
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+<!--end header part-->
+
+
+<!--start of grid-system-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6" style="margin-top:50px;">
+      <h4>Log in and get productive</h4>
+      <h6 style="margin-top: 50px; color: #4e555e;">Use your social account to log in as a Seeker.</h6>
+<br>
+
+  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" style="border: 1px solid grey; padding-left: 30px; padding-right: 30px;"><img src="facebook.png" style="width: 30px;"></a>
+
+
+<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" style="border: 1px solid grey; padding-left: 30px; padding-right: 30px;"><img src="search.png" style="width: 30px;"></a>
+
+
+<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" style="border: 1px solid grey; padding-left: 30px; padding-right: 30px;"><img src="linkedin.png" style="width: 30px;"></a>
+
+
+
+
+<h6 style="padding-top: 20px; color: #4e555e;">-------------Or continue with----------------</h6>
+
+<!--start of form section-->
+
+
+
+<form style="margin-top: 20px;">
+  <div class="mb-3">
+   
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" style="width: 85%; background-color: #ededed; ">
+
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 85%; background-color: #ededed; ">
+
+
+    
+  </div>
+
+
+ 
+
+  <div class="mb-3 form-check">
+
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+    <label class="form-check-label" for="exampleCheck1">Keep me logged in</label>
+    <a class="nav-link" href="#" style="color: #ffc107; position: relative; bottom:32px; left: 300px;  ">Forgot Password?</a>
+
+<div class="d-grid gap-2 col-6">
+  <button class="btn btn-dark" type="button" style="margin-left: 10px; font-weight: bold;width: 150%;">LOG IN</button>
+  
+</div>
+
+
+<p style="color: #4e555e; margin-top: 20px; padding-left: 130px;">Don't have an account?</p>
+<a class="nav-link" href="#" style="color:#ffc107 ; padding-left: 180px;">Sign up</a>
+
+
+
+
+
+
+
+
+  </div>
+ 
+</form>
+<!--end of form section-->
+
+    </div>
+
+
+    <div class="col-lg-6">
+      <img src="postjob-img.jpg">
+    </div>
+    
+  </div>
+</div>
+
+<!--end of grid-system-->
+
+
+
+
+
+
+<!--start of footer-->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><img src="facebook.png" style="width: 40px;"></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><img src="twitter.png" style="width: 40px;"></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><img src="search.png" style="width: 40px;"></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><img src="instagram.png" style="width: 40px;"></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><img src="linkedin.png" style="width: 40px;"></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><img src="github.png" style="width: 40px;"></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    
+
+   
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">About Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Webiste Term of Use</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Privacy Policy</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+         
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Companies Hiring</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Customer Success Stories</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Customer Solution Overview</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Latest Research</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Banner Rate Card</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Widgets</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Help Center</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Book Now</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"  style="text-decoration: none;">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © Jobberman 2021.  All rights reserved.
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!--end of footer-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
